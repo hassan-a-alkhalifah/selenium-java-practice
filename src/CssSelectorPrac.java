@@ -11,7 +11,7 @@ public class CssSelectorPrac {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://login.salesforce.com/");
 		driver.findElement(By.cssSelector("[id='username']")).sendKeys("username");
-		driver.findElement(By.cssSelector("[id='password']")).sendKeys("password");
+		driver.findElement(By.cssSelector("input['#password']")).sendKeys("password");
 		driver.findElement(By.xpath("//input[@id='Login']")).click();
 	}
 
